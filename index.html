@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rabbit Lens — o app para fotógrafos autônomos organizarem clientes, sessões e finanças em um só lugar." />
+  <title>Rabbit Lens</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-icon">
+          <img src="assets/coelho.svg" alt="" width="32" height="32" />
+        </span>
+        <span class="nav__logo-text">Rabbit Lens</span>
+      </a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features" class="nav__link">Funcionalidades</a></li>
+        <li><a href="#download" class="nav__link">Download</a></li>
+        <li>
+          <a href="#download" class="btn btn--primary btn--sm">
+            Baixar no App Store
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <span class="hero__badge">Para fotógrafos autônomos</span>
+      <h1 class="hero__title">
+        Seu estúdio.<br />
+        <em>Na palma da mão.</em>
+      </h1>
+      <p class="hero__subtitle">
+        Rabbit Lens organiza seus clientes, sessões e finanças para que você
+        foque no que faz de melhor: <strong>fotografar.</strong>
+      </p>
+      <div class="hero__ctas">
+        <a href="#download" class="btn btn--primary">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm.75 4.25v4.5l3.5 2-0.75 1.25L9.25 11.5V6.25h1.5z" fill="currentColor"/></svg>
+          Baixar grátis
+        </a>
+        <a href="mailto:amandhalimasantos@gmail.com" class="btn btn--outline">
+          Fale com a gente
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <img
+        src="assets/coelho.svg"
+        alt="Mascote Rabbit Lens"
+        class="hero__rabbit"
+      />
+    </div>
+  </section>
+
+  <!-- ===================== VALUE PROP ===================== -->
+  <section class="value-prop" id="value-prop">
+    <div class="container">
+      <p class="value-prop__text">
+        Para fotógrafos que <strong>perdem tempo</strong> com planilhas,
+        cadernos e mensagens no WhatsApp tentando lembrar de pagamentos e
+        datas de entrega.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Tudo que você precisa, <em>num só lugar</em></h2>
+
+      <div class="features__grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--musgo">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="5" width="22" height="18" rx="3" fill="currentColor" opacity="0.15"/>
+              <rect x="3" y="5" width="22" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 11h12M8 15h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="21" cy="21" r="5" fill="currentColor"/>
+              <path d="M19 21h4M21 19v4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Gestão de Clientes</h3>
+          <p class="feature-card__text">
+            Cadastre cada cliente com informações completas, tipo de ensaio e
+            data. Filtre e busque com facilidade para nunca perder um detalhe.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--mostarda">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <circle cx="14" cy="14" r="11" fill="currentColor" opacity="0.15"/>
+              <circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 8v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Controle Financeiro</h3>
+          <p class="feature-card__text">
+            Acompanhe receitas, despesas e lucro líquido por semana, mês ou
+            ano. Veja exatamente quanto cada cliente contribui para o seu
+            resultado.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-card__icon feature-card__icon--marrom">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="3" y="14" width="5" height="11" rx="1.5" fill="currentColor"/>
+              <rect x="11.5" y="9" width="5" height="16" rx="1.5" fill="currentColor"/>
+              <rect x="20" y="4" width="5" height="21" rx="1.5" fill="currentColor"/>
+              <path d="M5.5 12L11 8l6 4 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="feature-card__title">Dashboard Inteligente</h3>
+          <p class="feature-card__text">
+            Tenha uma visão geral do seu estúdio: sessões agendadas, clientes
+            pendentes e metas financeiras — tudo na tela inicial do app.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOWNLOAD CTA ===================== -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download__inner">
+        <div class="download__text">
+          <h2 class="download__title">Pronto para organizar seu estúdio?</h2>
+          <p class="download__sub">
+            Baixe gratuitamente e comece a usar hoje mesmo.
+          </p>
+          <div class="download__ctas">
+            <a href="#" class="btn btn--dark">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <path d="M15.5 2c-1.2 1.1-2 2.8-1.8 4.5 1.5.1 3-0.7 3.9-1.8C18.7 3.5 19.3 1.9 19 0.4c-1.4.1-2.8 0.9-3.5 1.6zM18.8 6.9c-2.1-0.1-3.9 1.2-4.9 1.2-1 0-2.5-1.1-4.2-1.1C7.2 7 4.3 8.5 2.8 11.1c-3 5.2-0.8 12.9 2.1 17.1 1.4 2.1 3.1 4.4 5.3 4.3 2.1-0.1 2.9-1.4 5.5-1.4 2.6 0 3.3 1.4 5.5 1.3 2.3-0.1 3.7-2.1 5.1-4.2 1.6-2.4 2.3-4.7 2.3-4.8-0.1 0-4.4-1.7-4.4-6.7-.1-4.2 3.4-6.2 3.6-6.3-2-2.9-5-3.3-6-3.5z" fill="currentColor"/>
+              </svg>
+              App Store
+            </a>
+            <a href="mailto:amandhalimasantos@gmail.com" class="btn btn--outline-dark">
+              Entrar em contato
+            </a>
+          </div>
+        </div>
+        <div class="download__rabbit" aria-hidden="true">
+          <img src="assets/coelho.svg" alt="" class="download__rabbit-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#hero" class="footer__logo">
+        <img src="assets/coelho.svg" alt="" width="24" height="24" class="footer__logo-img" />
+        Rabbit Lens
+      </a>
+
+      <div class="footer__links">
+        <a href="mailto:amandhalimasantos@gmail.com" class="footer__link">Contato</a>
+        <a href="https://doc-hosting.flycricket.io/rabbit-lens-privacy-policy/4de06bc0-5c39-416b-bfb6-438931fcf7ab/privacy" target="_blank" rel="noopener noreferrer" class="footer__link">Política de Privacidade</a>
+      </div>
+
+      <p class="footer__copy">&copy; 2026 Rabbit Lens. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
